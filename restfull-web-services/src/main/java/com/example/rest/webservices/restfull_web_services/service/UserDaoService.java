@@ -12,12 +12,6 @@ import java.util.function.Predicate;
 public class UserDaoService {
     public static List<User> users = new ArrayList<>();
     private static  int userCount = 0;
-    static {
-        users.add(new User(++userCount, "Adam", LocalDate.of(1990, 1, 1)));
-        users.add(new User(++userCount, "Eve", LocalDate.of(1991, 1, 1)));
-        users.add(new User(++userCount, "Jack", LocalDate.of(1992, 1, 1)));
-        users.add(new User(++userCount, "Lily", LocalDate.of(1993, 1, 1)));
-    }
 
     public List<User> findAll() {
         return users;
